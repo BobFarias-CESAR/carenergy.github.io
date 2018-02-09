@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Car Energy</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+
+  <style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+  body, html {
+      height: 100%;
+      line-height: 1.8;
+  }
+  /* Full height image header */
+  .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("../img/per/bg1.jpg");
+      min-height: 100%;
+  }
+
+  .bgimg-2 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("../img/bg2.jpg");
+      min-height: 100%;
+  }
+
+
+  .bgimg-3 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("../img/per/bg3.jpg");
+      min-height: 100%;
+  }
+
+  .bgimg-4 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("../img/per/bg4.jpg");
+      height: 55%;
+  }
+
+  .w3-bar .w3-button {
+      padding: 16px;
+  }
+
+  #logo1{
+    width: 40%;
+    height: 40%;
+  }
+
+  #buttondownlooad{
+    width: 50%;
+  }
+
+  #buttondownlooad2{
+    width: 50%;
+    float: right;
+  }
+
+  .quadrado{
+    margin-right: 0px;
+
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="../index.html" class="w3-bar-item w3-button w3-wide"> Car Energy</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="../index.html" class="w3-bar-item w3-button">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button">SOBRE</a>
+      <a href="#funcionalidades" class="w3-bar-item w3-button">FUNCIONALIDADES</a>
+      <a href="#DISPOSITIVOS" class="w3-bar-item w3-button"> DISPOSITIVOS</a>
+      <a href="#como-usar" class="w3-bar-item w3-button">COMO USAR</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px; width: 70%;">
+    <span class="w3-jumbo w3-hide-small">
+      <img id="logo1" src="../img/logo.png">
+    </span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">
+      <img id="logo1" src="../img/logo.png">
+    </span>
+    <br>
+    <h2>Sua melhor performance</h2>
+    <br>
+    <button class="w3-button w3-block w3-white w3-round" id="buttondownlooad" onclick="document.getElementById('download').style.display='block'">Reserve agora!</button>
+
+  </div> 
+</header>
+
+
+<div id="download" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSddxTOaHDuj-mlWEGdVArPIBaOaPLiw3UGjYZgDTMkNyf-38g/viewform?embedded=true" width="760" height="450" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+          <span onclick="document.getElementById('download').style.display='none'"
+  class="w3-button w3-white w3-large w3-display-topright">&times;</span>
+    </div>
+  </div>
+</div>
+
+<!-- About Section -->
+<div class="w3-container bgimg-2 w3-text-white" style="padding:128px 16px; " id="about">
+  <div class="w3-row-padding">
+    <div class="w3-col m6 w3-right">
+      <br>
+      <br>
+      <h1 style ="font-size: 70px; font-weight: 900; line-height: 90px; ">Seu estilo de direção na palma da sua mão</h1>
+      <br>
+      <ol> 
+          <li><h4>Saiba como economizar na direção.</h4></li> 
+          <li><h4>Dirija de uma maneira mais eficiente.</h4></li> 
+          <li><h4>Monitore seu carro em tempo real onde quer que esteja.</h4></li> 
+
+      </ol>
+      <br>
+        <p class="w3-button w3-black w3-round" onclick="document.getElementById('download2').style.display='block'"><i class="fa fa-th"> </i> Mais informações</p>
+
+
+    </div>
+    <div class="w3-col m6 w3-right">
+      <img class="w3-image w3-round-large" style="width: 60%; padding-left: 100px;" src="../img/per/cellphone.gif" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<div id="download2" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScI4MQLwry9tqqVf3rQjslPSdTTDeXMe5Tqai_QHEbjqTv-3g/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+          <span onclick="document.getElementById('download2').style.display='none'"
+  class="w3-button w3-white w3-large w3-display-topright">&times;</span>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Funcionalidades Section -->
+<div class="w3-container" style="padding:128px 16px" id="funcionalidades">
+  <h3 class="w3-center" style="font-weight: 900; font-size: 40px;">Funcionalidades</h3>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <img class="w3-margin-bottom w3-jumbo w3-center" style=" padding-top: 30px; width: 40%;" src="../img/f1.png"></i>
+      <p class="w3-large">Totalmente em português:</p>
+      <p>Desenvolvido por brasileiros para brasileiros. Medidas em litros, quilômetros e reais.</p>
+    </div>
+    <div class="w3-quarter">
+      <img class="w3-margin-bottom w3-jumbo w3-center" style=" padding-top: 30px; width: 40%;" src="../img/per/f2.png"></i>
+      <p class="w3-large">Emissão de poluentes:</p>
+      <p>Saiba quantos poluentes seu veículo está despejando no ar.</p>
+    </div>
+
+    <div class="w3-quarter">
+      <img class="w3-margin-bottom w3-jumbo w3-center" style=" padding-top: 30px; width: 40%;" src="../img/per/f3.png"></i>
+      <p class="w3-large">Localização do veículo:</p>
+      <p>Saiba em tempo real onde está seu carro e a que velocidade ele se encontra.</p>
+    </div>
+
+    <div class="w3-quarter">
+      <img class="w3-margin-bottom w3-jumbo w3-center" style=" padding-top: 30px; width: 40%;" src="../img/f4.png"></i>
+      <p class="w3-large">Relatórios:</p>
+      <p>Receba relatórios diários, semanais ou mensais dos seu perfil de direção e dos outros motoristas da comunidade CarEnergy.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container bgimg-3 w3-light-grey" style="padding:128px 16px" id="DISPOSITIVOS">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h1 style ="font-size: 5em; font-weight: 900; line-height: 100px;">Análise e manutenção fáceis e rápidas</h1>
+      <br>
+      <h4>O Car Energy encontra qualquer problema em seu veículo. Com um monitoramento preciso e seguro, ele avisa quando há problema mecânico.</h4>
+      <br>
+        <p class="w3-button w3-black w3-round" onclick="document.getElementById('download3').style.display='block'"><i class="fa fa-th"> </i> Mais informações</p>
+    </div>
+  </div>
+</div>
+
+<div id="download3" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeOCRF2rR42X7xviqK36zYWJMGfhdZxC3yUzCJKHI2mIOZGEA/viewform?embedded=true" width="760" height="450" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+          <span onclick="document.getElementById('download3').style.display='none'"
+  class="w3-button w3-white w3-large w3-display-topright">&times;</span>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container" style="padding:128px 16px" id="como-usar">
+  <h4 class="w3-center">Como funciona o Car Energy?</h4>
+  <h1 class="w3-center" style="font-weight: 900; font-size: 4em;">Veja como é simples!</h1>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+
+    <div class="w3-quarter quadrado">
+      <img class="w3-margin-bottom w3-jumbo w3-center" style=" padding-top: 30px; width: 40%;" src="../img/per/icon1.png"></i>
+      <p style="font-weight: 900; font-size: 2em; line-height: 40px; margin: 10px;">Adquira o dispotivo Car energy.</p>
+    </div>
+    <div class="w3-quarter quadrado">
+      <img class="w3-margin-bottom w3-jumbo w3-center" style=" padding-top: 30px; width: 40%;" src="../img/per/icon2.png"></i>
+      <p style="font-weight: 900; font-size: 2em; line-height: 40px; margin: 10px;">Instale no seu veículo.</p>
+    </div>
+    <div class="w3-quarter quadrado">
+      <img class="w3-margin-bottom w3-jumbo w3-center" style=" padding-top: 30px; width: 40%;" src="../img/per/icon3.png"></i>
+      <p style="font-weight: 900; font-size: 2em; line-height: 40px; margin: 10px;">Sicronize seu celular.</p>
+    </div>
+    <div class="w3-quarter quadrado">
+      <img class="w3-margin-bottom w3-jumbo w3-center" style=" padding-top: 30px; width: 40%;" src="../img/per/icon4.png"></i>
+      <p style="font-weight: 900; font-size: 2em; line-height: 40px; margin: 10px;">Obtenha os dados e tenha mais economia.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 bgimg-4">
+  <h1 style ="font-size: 4em; font-weight: 900; line-height: 100px; margin-right: 100px; margin-left: 100px;">Atendendo a maior necessidade do motorista brasileiro.</h1>
+  <p>2018 CAR ENERGY ALL RIGHTS RESERVED</p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+
+
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
