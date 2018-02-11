@@ -54,9 +54,22 @@
     height: 40%;
   }
 
+  @media only screen and (max-width: 500px) {
+    #logo1 {
+        width: 80%;
+    }
+}
+
+
   #buttondownlooad{
     width: 50%;
   }
+
+  @media only screen and (max-width: 500px) {
+    #buttondownlooad{
+    width: 100%;
+  }
+}
 
   #buttondownlooad2{
     width: 50%;
@@ -67,6 +80,80 @@
     margin-right: 0px;
 
   }
+
+
+  #about{
+    padding:128px 16px;
+  }
+
+ @media only screen and (max-width: 500px) {
+    #about{
+     padding: 40px 0;
+  }
+}
+
+
+#h1about{
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 90px;
+}
+
+ @media only screen and (max-width: 500px) {
+    #h1about{
+     font-size: 36px;
+    font-weight: 900;
+  }
+}
+
+#gif{
+  width: 60%;
+  padding-left: 100px;
+}
+
+@media only screen and (max-width: 500px) {
+    #gif{
+      width: 60%;
+    padding-left: 60px;
+  }
+}
+
+
+#h1gene{
+
+  font-size: 5em;
+  font-weight: 900;
+  line-height: 100px;
+}
+
+
+@media only screen and (max-width: 500px) {
+    #h1gene{
+      font-size: 36px;
+      font-weight: 900;
+      line-height: 70px;
+  }
+}
+
+
+#fontfooter{
+  font-size: 4em;
+  font-weight: 900;
+  line-height: 100px;
+  margin-right: 100px;
+  margin-left: 100px;
+  }
+
+  @media only screen and (max-width: 500px) {
+ #fontfooter{
+    font-size: 34px;
+    line-height: 50px;
+    margin-right: 0px; 
+    margin-left: 0px;
+  }
+}
+
+
   </style>
 </head>
 <body>
@@ -94,11 +181,11 @@
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">SOBRE</a>
+  <a href="#funcionalidades" onclick="w3_close()" class="w3-bar-item w3-button">FUNCIONALIDADES</a>
+  <a href="#DISPOSITIVOS" onclick="w3_close()" class="w3-bar-item w3-button">DISPOSITIVOS</a>
+  <a href="#como-usar" onclick="w3_close()" class="w3-bar-item w3-button">COMO USAR</a>
 </nav>
 
 <!-- Header with full-height image -->
@@ -130,12 +217,12 @@
 </div>
 
 <!-- About Section -->
-<div class="w3-container bgimg-2 w3-text-white" style="padding:128px 16px; " id="about">
+<div class="w3-container bgimg-2 w3-text-white" id="about">
   <div class="w3-row-padding">
     <div class="w3-col m6 w3-right">
       <br>
       <br>
-      <h1 style ="font-size: 70px; font-weight: 900; line-height: 90px; ">Diagnóstico simples e preciso</h1>
+      <h1 id="h1about" ">Diagnóstico simples e preciso</h1>
       <br>
       <ol> 
           <li><h4>Diagnóstico completo do seu carro e possíveis falhas.</h4></li> 
@@ -144,11 +231,11 @@
 
       </ol>
       <br>
-        <p class="w3-button w3-black w3-round" onclick="document.getElementById('download2').style.display='block'"><i class="fa fa-th"> </i> Mais informações</p>
+        <p class="w3-button w3-black w3-round w3-center" onclick="document.getElementById('download2').style.display='block'"><i class="fa fa-th"> </i> Mais informações</p>
 
     </div>
     <div class="w3-col m6 w3-right">
-      <img class="w3-image w3-round-large" style="width: 60%; padding-left: 100px;" src="../img/man/cellphone.gif" alt="Buildings" width="700" height="394">
+      <img id="gif" class="w3-image w3-round-large" src="../img/man/cellphone.gif">
     </div>
   </div>
 </div>
@@ -199,7 +286,7 @@
 <div class="w3-container bgimg-3 w3-light-grey" style="padding:128px 16px" id="DISPOSITIVOS">
   <div class="w3-row-padding">
     <div class="w3-col m6">
-      <h1 style ="font-size: 5em; font-weight: 900; line-height: 100px;">Análise e manutenção de forma fácil e rápida</h1>
+      <h1 id="h1gene">Análise e manutenção de forma fácil e rápida</h1>
       <br>
       <h4>Com um monitoramento preciso e seguro, o Car Energy encontra qualquer problema em seu veículo e o avisa!</h4>
       <br>
@@ -273,7 +360,7 @@
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 bgimg-4">
-  <h1 style ="font-size: 4em; font-weight: 900; line-height: 100px; margin-right: 100px; margin-left: 100px;">Atendendo as necessidades do motorista brasileiro.</h1>
+  <h1 id="fontfooter">Atendendo as necessidades do motorista brasileiro.</h1>
   <p>2018 CAR ENERGY ALL RIGHTS RESERVED</p>
 </footer>
  
