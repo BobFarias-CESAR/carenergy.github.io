@@ -153,6 +153,21 @@
   }
 }
 
+.google-forms {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .google-forms iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+
 
   </style>
 </head>
@@ -209,7 +224,9 @@
 <div id="download" class="w3-modal w3-animate-opacity">
   <div class="w3-modal-content" style="padding:32px">
     <div class="w3-container w3-white">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDhie90udDeuodQo02d5aNwXba8mAAZ3FBQAePuqjfx7ckig/viewform?embedded=true" width="760" height="450" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+    <div class="google-forms">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDhie90udDeuodQo02d5aNwXba8mAAZ3FBQAePuqjfx7ckig/viewform?embedded=true" width="760" height="450" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+    </div>
           <span onclick="document.getElementById('download').style.display='none'"
   class="w3-button w3-white w3-large w3-display-topright">&times;</span>
     </div>
@@ -244,7 +261,9 @@
 <div id="download2" class="w3-modal w3-animate-opacity">
   <div class="w3-modal-content" style="padding:32px">
     <div class="w3-container w3-white">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSffSi-tL0qV8UtEsoZ9rEauqOY4MBuH3_dUjEtzwEj8UqDI1Q/viewform?embedded=true" width="760" height="450" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+      <div class="google-forms">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSffSi-tL0qV8UtEsoZ9rEauqOY4MBuH3_dUjEtzwEj8UqDI1Q/viewform?embedded=true" width="760" height="450" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+      </div>
           <span onclick="document.getElementById('download2').style.display='none'"
   class="w3-button w3-white w3-large w3-display-topright">&times;</span>
     </div>
@@ -298,7 +317,9 @@
 <div id="download3" class="w3-modal w3-animate-opacity">
   <div class="w3-modal-content" style="padding:32px">
     <div class="w3-container w3-white">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfXIMPxwDs3wzVIsXspXFuCzVIuKpvkjD_xwFDmH9JmHo5Szw/viewform?embedded=true" width="760" height="450" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+    <div class="google-forms">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfXIMPxwDs3wzVIsXspXFuCzVIuKpvkjD_xwFDmH9JmHo5Szw/viewform?embedded=true" width="760" height="450" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+    </div>
           <span onclick="document.getElementById('download3').style.display='none'"
   class="w3-button w3-white w3-large w3-display-topright">&times;</span>
     </div>
@@ -399,11 +420,7 @@ function showDivs(n) {
 }
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
+
 
 </body>
 </html>

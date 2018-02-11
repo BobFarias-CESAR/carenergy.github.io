@@ -153,6 +153,20 @@
   }
 }
 
+.google-forms {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .google-forms iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
 
 
 
@@ -211,7 +225,9 @@
 <div id="download" class="w3-modal w3-animate-opacity">
   <div class="w3-modal-content" style="padding:32px">
     <div class="w3-container w3-white">
- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfvcqoZWFQrTVUfdj6J49GZBq_obvLwhxxy0dx6ZycmksgN1A/viewform?embedded=true" width="760" height="450" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+      <div class="google-forms">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfvcqoZWFQrTVUfdj6J49GZBq_obvLwhxxy0dx6ZycmksgN1A/viewform?embedded=true" width="760" height="450" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+      </div>
           <span onclick="document.getElementById('download').style.display='none'"
   class="w3-button w3-white w3-large w3-display-topright">&times;</span>
     </div>
@@ -246,7 +262,9 @@
 <div id="download2" class="w3-modal w3-animate-opacity">
   <div class="w3-modal-content" style="padding:32px">
     <div class="w3-container w3-white">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScwNH4Z5USnZ3g34K9lSpcm-VQA-ilATmiEX0h6QDrJl040Ag/viewform?embedded=true" width="760" height="450" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+      <div class="google-forms">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScwNH4Z5USnZ3g34K9lSpcm-VQA-ilATmiEX0h6QDrJl040Ag/viewform?embedded=true" width="760" height="450" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+      </div>
           <span onclick="document.getElementById('download2').style.display='none'"
   class="w3-button w3-white w3-large w3-display-topright">&times;</span>
     </div>
@@ -300,7 +318,9 @@
 <div id="download3" class="w3-modal w3-animate-opacity">
   <div class="w3-modal-content" style="padding:32px">
     <div class="w3-container w3-white">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7vmuYuefjnfqc-lhW3xMCnjLsd12uj45lBqiXiww7V9Stnw/viewform?embedded=true" width="760" height="450" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+      <div class="google-forms">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7vmuYuefjnfqc-lhW3xMCnjLsd12uj45lBqiXiww7V9Stnw/viewform?embedded=true" width="760" height="450" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+      </div>
           <span onclick="document.getElementById('download3').style.display='none'"
   class="w3-button w3-white w3-large w3-display-topright">&times;</span>
     </div>
